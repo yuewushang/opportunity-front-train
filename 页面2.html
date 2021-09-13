@@ -1,0 +1,64 @@
+<html>
+    <head>
+        <script src="../vue.js"></script>
+        <title>请描绘你心目中的老师</title>
+        <style>
+            .box4{
+                border-style: groove;/*边框为黑线*/
+                font-family: 华文楷体;
+                font-size: 1.5em;
+                text-align: center;
+                margin-top: 50px;
+                margin-left: 500px;
+                margin-right: 500px;
+                width: auto;
+                height: auto;
+            }
+            .box5{
+                background-color:lemonchiffon;
+                text-align: center;
+                font-family: 华文楷体;
+                font-size: 1em;
+            }
+            .box6{
+                text-align: center;
+                width: 100px;
+                height: 100px;
+                margin-left: 300px;
+            }
+            .box7{
+                background-color:lemonchiffon;
+                font-family: 华文楷体;
+                font-size: 0.7em;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="tupian2"class="box6">
+            <img src="./2.png" alt="">
+        </div>
+        <form action="./页面3.html"method="get">
+            <div id="root2"class="box4">
+                <h1>你心目中的老师：</h1>
+                <p>老师的性别：
+                    <select name="teacherSex" id="老师的性别"required class="box5">
+                        <option value="boy">女</option>
+                        <option value="girl">男</option>
+                    </select>
+                </p>
+                <p>
+                    老师的性格及其教学特点：<input type="text"required class="box7">
+                </p>
+                <p>
+                    愿意付的薪酬：<input type="text"required class="box7">元
+                </p>
+                <p >
+                    <input type="submit"value="下一步"class="box5">
+                    <input type="reset"value="重新填写"class="box5">
+                </p>
+                <a href="./页面1.html">上一步</a>
+            </div>
+        </form>
+        <script></script>
+    </body>
+</html>

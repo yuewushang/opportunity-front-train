@@ -1,0 +1,80 @@
+<html>
+    <head>
+        <title>第一个页面</title>
+        <script src="../vue.js"></script>
+        <style>
+            .box1{
+
+                border-style: groove;
+                width: 500;
+                height: auto;
+                font-family: 华文楷体;
+                font-size: 1.5em;
+                text-align: center;
+                margin-top: 100px;/*距离顶部的距离*/
+                margin-left: 500px;
+                overflow:auto;
+            }
+            .box2{
+                font-family: 华文楷体;
+                font-size: 1em;
+                background-color:lemonchiffon;
+            }
+            .box3{
+                width: 1px;
+                height: 1px;
+                text-align: center;
+                margin-left: 300px;
+            }
+            .b{
+                font-family: 华文楷体;
+                font-size: 0.5em;
+                background-color:lemonchiffon;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="tupian1"class="box3">
+            <img src="./2.png" alt="">
+        </div>
+        <form action="./页面2.html"method="get"name="form1">
+        <div id="root"class="box1">
+            <h1>学生信息</h1>
+            <p >
+                学生性别: <input type="radio"name="sex"required>男<!--radio单选框-->
+                <input type="radio"name="sex"required>女
+            </p>
+            <p>
+                学生年级: <select name="grade" id="studentGrade"required class="box2">
+                    <option value="小学一年级">小学一年级</option>
+                    <option value="小学二年级">小学二年级</option>
+                    <option value="小学三年级">小学三年级</option>
+                    <option value="小学四年级">小学四年级</option>
+                    <option value="小学五年级">小学五年级</option>
+                    <option value="小学六年级">小学六年级</option>
+                </select>
+            </p>
+            <p >
+                科目: <select name="subject" id="studentSubject"required class="box2">
+                    <option value="语文">语文</option>
+                    <option value="数学">数学</option>
+                    <option value="英语">英语</option>
+                    <option value="物理">物理</option>
+                    <option value="化学">化学</option>
+                    <option value="生物">生物</option>
+                    <option value="其他">其他</option>
+                </select>
+            </p>
+            <p>
+                其他科目<input type="text"placeholder="选择其他科目时填写"class="box2">
+            </p>
+            <p>一周上课次数(1~7次较合适)<input type="number"required class="box2"></p>
+            <p>上课时间(可以与老师进行协商)<input type="text"required class="box2"></p>
+            <p>
+                <input type="submit"value="下一步"required class="box2">
+                <input type="reset"value="重新填写"required class="box2">
+            </p>
+        </form>
+        </div>
+    </body>
+</html>
